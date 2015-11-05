@@ -21,6 +21,8 @@ Voici quelques captures d'écran de l'application, dont le design a été basé 
 
 ------------------
 
-
 ![alt text](screen/welcome.png)
+ 
+------------------
 
+Voici le lien vers la [partie Frontend de l'application](https://github.com/GitOfThomas/mewpipe-frontend).
