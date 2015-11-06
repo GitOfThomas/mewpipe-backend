@@ -120,26 +120,26 @@ module.exports.http = {
     var serverUrl = ConfigService.config().backUrl;
 
     passport.use(new GitHubStrategy({
-      clientID: "cb9b3909514f5ecab919",
-      clientSecret: "f7d8a3951fe978ce9264b16a3df5bc747559de1d",
+      clientID: "yourClientId",
+      clientSecret: "yourClientSecret",
       callbackURL: serverUrl + 'users/github/callback'
     }, verifyHandler));
 
     passport.use(new FacebookStrategy({
-      clientID: "1578524672359243",
-      clientSecret: "923af84d94333267eb0b963d54f6e4fc",
+      clientID: "yourClientId",
+      clientSecret: "yourClientSecret",
       callbackURL: serverUrl + 'users/facebook/callback'
     }, verifyHandler));
 
     passport.use(new GoogleStrategy({
-      clientID: '815528573546-vb173gkt19ip8cj52m27ocl5v8efmmm9.apps.googleusercontent.com',
-      clientSecret: 'jyU15uIzP62-8A-_vC9Qe1TK',
+      clientID: 'yourClientId',
+      clientSecret: 'yourClientSecret',
       callbackURL: serverUrl + 'users/google/callback'
     }, verifyHandler));
 
     passport.use(new TwitterStrategy({
-      consumerKey: 'IGENTjoUiABknH1LZEKACih3G',
-      consumerSecret: 'REQOszAyJJHAwbW4nTaeXcndc1MdJkRPPl6QuSoFnvfMLBbglA',
+      consumerKey: 'yourConsumerKey',
+      consumerSecret: 'yourConsumerSecret',
       callbackURL: serverUrl + 'users/twitter/callback'
     }, verifyHandler));
 
